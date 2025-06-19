@@ -8,8 +8,8 @@ repo_name: stanfordnlp/dspy
 edit_uri: blob/main/docs/docs/
 docs_dir: "docs/"
 nav:
-    - Get Started: index.md
-    - Learn DSPy:
+    - Get Started: 
+        - Overview: index.md
         - Learning DSPy: learn/index.md
         - DSPy Programming:
             - Programming Overview: learn/programming/overview.md
