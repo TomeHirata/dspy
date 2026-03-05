@@ -95,6 +95,8 @@ class ReAct(Module):
         for idx, tool in enumerate(tools.values()):
             instr.append(f"({idx + 1}) {tool}")
 
+        # TODO: ReAct doesn't work with native function calling, because it doesn't have tools as input fields.
+        # This should be fixed by adding tools as input fields based on adapter.use_native_function_calling.
         if parallel_tool_calls:
             instr.append(
                 "When providing `next_tool_calls`, provide a list of tool calls. Each tool call should be a dictionary with 'name' and 'args' keys. "
